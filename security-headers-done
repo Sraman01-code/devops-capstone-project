@@ -1,0 +1,50 @@
+nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+nose.plugins.cover: INFO: Coverage report will include only packages: ['service', 'service']
+[2026-07-17 23:58:50,019] INFO in __init__: Service initialized!
+[2026-07-17 23:58:50,208] INFO in __init__: Service initialized!
+It should add an Account to the database ... ok
+It should create an Account and assert that it exists ... ok
+It should delete an Account from the database ... ok
+It should deserialize an Account from a dictionary ... ok
+It should default date_joined to today when it is missing ... ok
+It should not deserialize bad data ... ok
+It should not deserialize an Account with a bad date ... ok
+It should not deserialize an Account with missing data ... ok
+It should return None when an Account is not found ... ok
+It should list all Accounts in the database ... ok
+It should read an Account from the database ... ok
+It should have a string representation ... ok
+It should serialize an Account into a dictionary ... ok
+It should update an Account in the database ... ok
+It should not update an Account with no id ... ok
+[2026-07-17 23:58:50,361] INFO in __init__: Service initialized!
+It should return a CORS header ... ok
+It should create a new Account ... ok
+It should not create an Account with missing data ... ok
+It should not create an Account with no Content-Type ... ok
+It should not create an Account with the wrong Content-Type ... ok
+It should delete an Account ... ok
+It should return 204 when deleting an Account that does not exist ... ok
+It should read a single Account ... ok
+It should not read an Account that is not found ... ok
+It should get 200_OK from the Home Page ... ok
+It should list all Accounts ... ok
+It should return an empty list when there are no Accounts ... ok
+It should not allow an illegal method call ... ok
+It should return security headers from Talisman ... ok
+It should update an existing Account ... ok
+It should not update an Account that is not found ... ok
+It should not update an Account with bad data ... ok
+
+Name                  Stmts   Miss  Cover   Missing
+---------------------------------------------------
+service\__init__.py      22      0   100%
+service\config.py         5      0   100%
+service\models.py        56      0   100%
+service\routes.py        56      0   100%
+---------------------------------------------------
+TOTAL                   139      0   100%
+----------------------------------------
+Ran 32 tests in 1.029s
+
+OK
